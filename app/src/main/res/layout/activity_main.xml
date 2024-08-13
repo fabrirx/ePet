@@ -7,49 +7,99 @@
     android:background="#F0EAD3"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgFundo"
+    <TextView
+        android:id="@+id/textoLogin3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="DENÚNCIA"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/textoLogin2"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/inicial"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadrado" />
+
+    <TextView
+        android:id="@+id/textoLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ADOÇÃO"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/imgQuadrado"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoII" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="88dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgQuadrado"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoII"
+        app:srcCompat="@drawable/retangulolaranja" />
+
+    <ImageView
+        android:id="@+id/imgQuadradoII"
+        android:layout_width="93dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/textoLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoHome"
+        app:layout_constraintVertical_bias="0.136"
+        app:srcCompat="@drawable/quadrado" />
+
+    <ImageView
+        android:id="@+id/imgQuadrado"
+        android:layout_width="93dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/textoLogin"
+        app:layout_constraintEnd_toStartOf="@+id/imgQuadradoII"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoHome"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/quadrado" />
 
     <TextView
         android:id="@+id/textoHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="476dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Como podemos te ajudar hoje?"
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgFundo"
-        app:layout_constraintVertical_bias="0.394" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textoLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Faça o seu login"
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgFundo"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textoPossui"
@@ -61,40 +111,73 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoLogin"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textoCadastre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
         android:layout_marginBottom="72dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="ㅤCadastre-se!"
         android:textColor="#ECA256"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbDenun"
+        android:layout_width="57dp"
+        android:layout_height="54dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgQuadrado"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuadrado"
+        app:layout_constraintStart_toStartOf="@+id/imgQuadrado"
+        app:layout_constraintTop_toTopOf="@+id/imgQuadrado"
+        app:srcCompat="@drawable/img" />
+
+    <ImageButton
+        android:id="@+id/imgbAdocao"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imgQuadradoII"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuadradoII"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/imgQuadradoII"
+        app:layout_constraintTop_toTopOf="@+id/imgQuadradoII"
+        app:layout_constraintVertical_bias="0.458"
+        app:srcCompat="@drawable/imgi" />
 
     <ImageView
-        android:id="@+id/imgDenun"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imgLogo"
+        android:layout_width="202dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/textoLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517"
-        app:srcCompat="@drawable/img"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_sem_fundo" />
 
     <ImageView
-        android:id="@+id/imgAdote"
-        android:layout_width="60dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/imgi"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="347dp" />
+        android:id="@+id/imageView4"
+        android:layout_width="88dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadrado"
+        app:srcCompat="@drawable/retangulolaranja" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
