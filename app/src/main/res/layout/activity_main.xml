@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgQuadradoII" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgReta2"
         android:layout_width="88dp"
         android:layout_height="26dp"
         android:layout_marginStart="55dp"
@@ -171,12 +171,12 @@
         app:srcCompat="@drawable/logo_sem_fundo" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgReta"
         android:layout_width="88dp"
         android:layout_height="26dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="54dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imgReta2"
         app:layout_constraintTop_toBottomOf="@+id/imgQuadrado"
         app:srcCompat="@drawable/retangulolaranja" />
 
