@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         //criando variável dos botões
         ImageButton imgbDenun = findViewById(R.id.imgbDenun);
         ImageButton imgbAdocao  = findViewById(R.id.imgbAdocao);
+        Button bt_cadastro = findViewById(R.id.bt_cadastro);
 
         //evento ao clicar no botão
         imgbDenun.setOnClickListener(new View.OnClickListener() {
@@ -27,11 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        imgbAdocao.setOnClickListener(new View.OnClickListener() {
+
+        //evento clicar no botão de cadastro invisivel
+        bt_cadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //metodo p abrir outra tela
-                Intent intent = new Intent(MainActivity.this, telaAdocao.class);
+                //método para abrir a outra tela
+                Intent intent = new Intent(MainActivity.this, telaCadastro.class);
                 startActivity(intent);
             }
         });
