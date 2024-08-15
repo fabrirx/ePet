@@ -27,5 +27,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        imgbAdocao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //metodo p abrir outra tela
+                Intent intent = new Intent(MainActivity.this, telaAdocao.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -125,9 +125,7 @@
         android:text="ㅤCadastre-se!"
         android:textColor="#ECA256"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textoPossui" />
 
     <ImageButton
         android:id="@+id/imgbDenun"
