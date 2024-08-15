@@ -120,14 +120,13 @@
         android:id="@+id/textoCadastre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginBottom="72dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="ㅤCadastre-se!"
         android:textColor="#ECA256"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textoPossui" />
 
     <ImageButton
         android:id="@+id/imgbDenun"
@@ -179,5 +178,16 @@
         app:layout_constraintEnd_toStartOf="@+id/imgReta2"
         app:layout_constraintTop_toBottomOf="@+id/imgQuadrado"
         app:srcCompat="@drawable/retangulolaranja" />
+
+    <Button
+        android:id="@+id/bt_cadastro"
+        android:layout_width="81dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="-80dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/textoCadastre"
+        app:layout_constraintStart_toEndOf="@+id/textoCadastre"
+        app:layout_constraintTop_toTopOf="@+id/textoCadastre"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
