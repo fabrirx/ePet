@@ -116,18 +116,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textoLogin"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textoCadastre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="72dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="ㅤCadastre-se!"
-        android:textColor="#ECA256"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textoPossui" />
-
     <ImageButton
         android:id="@+id/imgbDenun"
         android:layout_width="57dp"
@@ -181,13 +169,31 @@
 
     <Button
         android:id="@+id/bt_cadastro"
-        android:layout_width="81dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="-80dp"
+        android:layout_width="145dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-5dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/textoCadastre"
-        app:layout_constraintStart_toEndOf="@+id/textoCadastre"
-        app:layout_constraintTop_toTopOf="@+id/textoCadastre"
+        app:layout_constraintBottom_toBottomOf="@+id/textoPossui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textoPossui"
+        app:layout_constraintTop_toTopOf="@+id/textoLogin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textoCadastre"
+        android:layout_width="117dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ㅤCadastre-se!"
+        android:textColor="#ECA256"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_cadastro"
+        app:layout_constraintEnd_toEndOf="@+id/bt_cadastro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_cadastro"
+        app:layout_constraintTop_toTopOf="@+id/bt_cadastro"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

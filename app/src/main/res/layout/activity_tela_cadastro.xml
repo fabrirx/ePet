@@ -11,18 +11,20 @@
         android:id="@+id/txtCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="123dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="CADASTRO"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgPata"
-        tools:layout_editor_absoluteY="96dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgRetaL"
         android:layout_width="83dp"
         android:layout_height="4dp"
-        android:layout_marginStart="88dp"
-        app:layout_constraintStart_toStartOf="@+id/imgPata"
+        app:layout_constraintStart_toEndOf="@+id/imgPata"
         app:srcCompat="@drawable/retangulolaranja"
         tools:layout_editor_absoluteY="126dp" />
 
@@ -32,6 +34,9 @@
         android:layout_height="75dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="75dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNome"
+        app:layout_constraintEnd_toStartOf="@+id/txtCadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/epet" />
@@ -40,7 +45,7 @@
         android:id="@+id/txtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="81dp"
         android:layout_marginTop="193dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="NOME:"
@@ -49,46 +54,169 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/img1"
-        android:layout_width="249dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="215dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/retaverde" />
-
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="249dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="276dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/retaverde" />
-
     <TextView
         android:id="@+id/txtSobrenome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="SOBRENOME:"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="244dp" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        style="@null"
+    <TextView
+        android:id="@+id/txtCpf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="293dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="CPF:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="347dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="TELEFONE:"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="RUA:"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="BAIRRO:"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCpf"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="82dp"
+        android:background="#ADC17C"
+        android:backgroundTint="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="@null"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="454dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <EditText
+        android:id="@+id/editTextFone"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="82dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <EditText
+        android:id="@+id/editTextRua"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="82dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <EditText
+        android:id="@+id/editTextBairro"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="82dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <EditText
+        android:id="@+id/editTextSobrenome"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="82dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="82dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#536038"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="CADASTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nº:"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="504dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
