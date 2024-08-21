@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgPata"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
+        android:layout_width="88dp"
+        android:layout_height="75dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="75dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,30 +18,30 @@
         app:srcCompat="@drawable/epet" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="63dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="162dp"
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="LOGIN"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgPata"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgBarra"
         android:layout_width="83dp"
         android:layout_height="4dp"
-        android:layout_marginStart="163dp"
         android:layout_marginTop="126dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPata"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/retangulolaranja" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textEmail"
         android:layout_width="55dp"
         android:layout_height="23dp"
         android:layout_marginTop="230dp"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textSenha"
         android:layout_width="55dp"
         android:layout_height="23dp"
         android:layout_marginTop="307dp"
@@ -105,24 +105,24 @@
         android:id="@+id/editTextText"
         android:layout_width="248dp"
         android:layout_height="24dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="-5dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="248dp"
         android:layout_height="24dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="-5dp"
         android:background="@color/white"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
