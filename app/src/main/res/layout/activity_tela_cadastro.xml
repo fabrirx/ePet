@@ -132,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:layout_marginEnd="123dp"
+        android:layout_marginEnd="137dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="CADASTRO"
         android:textSize="20sp"
@@ -150,8 +150,8 @@
 
     <ImageView
         android:id="@+id/imgPata"
-        android:layout_width="88dp"
-        android:layout_height="75dp"
+        android:layout_width="74dp"
+        android:layout_height="71dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="75dp"
         app:layout_constraintEnd_toStartOf="@+id/txtCadastro"

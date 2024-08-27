@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgPata"
-        android:layout_width="88dp"
-        android:layout_height="75dp"
+        android:layout_width="74dp"
+        android:layout_height="71dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="75dp"
         app:layout_constraintStart_toStartOf="parent"
