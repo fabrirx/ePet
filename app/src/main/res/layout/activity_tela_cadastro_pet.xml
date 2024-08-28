@@ -12,22 +12,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="585dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="SAÚDE:"
+        android:text="STATUS:"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="624dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText11"
         android:layout_width="248dp"
         android:layout_height="24dp"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="-5dp"
         android:layout_marginEnd="83dp"
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="NOME DO PET:"
         android:textSize="15sp"
@@ -80,11 +81,12 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="PORTE:"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="224dp" />
 
     <EditText
         android:id="@+id/editTextText7"
@@ -94,7 +96,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -103,11 +104,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="340dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="ESPÉCIE:"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText6"
@@ -117,7 +119,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -126,11 +127,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="520dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="SAÚDE:"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText10"
@@ -141,7 +143,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,7 +152,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="220dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="IDADE:"
         android:textSize="15sp"
@@ -163,7 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="220dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="PESO:"
         android:textSize="15sp"
@@ -178,7 +179,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -190,7 +190,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -199,11 +198,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="460dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="TEMPERAMENTO:"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="492dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText9"
@@ -214,7 +214,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -225,11 +224,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="400dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="JÁ É CASTRADO?"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText8"
@@ -240,7 +240,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -251,7 +250,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="280dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="RAÇA:"
         android:textSize="15sp"
@@ -267,7 +266,6 @@
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -278,14 +276,51 @@
         android:layout_width="248dp"
         android:layout_height="24dp"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="-5dp"
         android:layout_marginEnd="83dp"
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#536038"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="CADASTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="12dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextText3"
+        app:srcCompat="@drawable/retangulovert"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="12dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText7"
+        app:layout_constraintStart_toEndOf="@+id/editTextText6"
+        app:srcCompat="@drawable/retangulovert"
+        tools:layout_editor_absoluteY="366dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
