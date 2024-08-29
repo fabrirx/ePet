@@ -8,7 +8,7 @@
     tools:context=".telaLogin">
 
     <ImageView
-        android:id="@+id/imgPata"
+        android:id="@+id/imgIconeLOGIN"
         android:layout_width="74dp"
         android:layout_height="71dp"
         android:layout_marginStart="88dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/epet" />
 
     <TextView
-        android:id="@+id/textLogin"
+        android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -28,20 +28,20 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imgPata"
+        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgBarra"
+        android:id="@+id/imgLinhaLOGIN"
         android:layout_width="83dp"
         android:layout_height="4dp"
         android:layout_marginTop="126dp"
-        app:layout_constraintStart_toEndOf="@+id/imgPata"
+        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/retangulolaranja" />
 
     <TextView
-        android:id="@+id/textEmail"
+        android:id="@+id/txtEmailLOGIN"
         android:layout_width="55dp"
         android:layout_height="23dp"
         android:layout_marginTop="230dp"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textSenha"
+        android:id="@+id/txtSenhaLOGIN"
         android:layout_width="55dp"
         android:layout_height="23dp"
         android:layout_marginTop="307dp"
@@ -68,41 +68,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="95dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="648dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btnverde" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="671dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="ENTRAR"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnEntrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="655dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTxtEmailLOGIN"
         android:layout_width="248dp"
         android:layout_height="24dp"
         android:layout_marginTop="-5dp"
@@ -111,10 +78,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailLOGIN" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTxtSenhaLOGIN"
         android:layout_width="248dp"
         android:layout_height="24dp"
         android:layout_marginTop="-5dp"
@@ -123,6 +90,58 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSenhaLOGIN" />
+
+    <ImageButton
+        android:id="@+id/imgbEntrarLOGIN"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="146dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnverde" />
+
+    <TextView
+        android:id="@+id/txtEntrarLOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ENTRAR"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgbEntrarLOGIN"
+        app:layout_constraintStart_toStartOf="@+id/imgbEntrarLOGIN"
+        app:layout_constraintTop_toTopOf="@+id/imgbEntrarLOGIN" />
+
+    <TextView
+        android:id="@+id/txtEsqueceuLOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Esqueceu a senha?"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtRecupereLOGIN"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRecupereLOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Recupere sua senha."
+        android:textColor="#ECA256"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

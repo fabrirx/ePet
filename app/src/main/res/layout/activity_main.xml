@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textoLogin3"
+        android:id="@+id/txtDenunciaUSER"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -17,13 +17,13 @@
         android:text="DENÚNCIA"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/textoLogin2"
+        app:layout_constraintEnd_toStartOf="@+id/txtAdocaoUSER"
         app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgQuadrado" />
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoUSER1" />
 
     <TextView
-        android:id="@+id/textoLogin2"
+        android:id="@+id/txtAdocaoUSER"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -35,8 +35,8 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toEndOf="@+id/imgQuadrado"
-        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoII" />
+        app:layout_constraintStart_toEndOf="@+id/imgQuadradoUSER1"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoUSER2" />
 
     <ImageView
         android:id="@+id/imgReta2"
@@ -44,36 +44,36 @@
         android:layout_height="26dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintStart_toEndOf="@+id/imgQuadrado"
-        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoII"
+        app:layout_constraintStart_toEndOf="@+id/imgQuadradoUSER1"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoUSER2"
         app:srcCompat="@drawable/retangulolaranja" />
 
     <ImageView
-        android:id="@+id/imgQuadradoII"
+        android:id="@+id/imgQuadradoUSER2"
         android:layout_width="93dp"
         android:layout_height="82dp"
-        app:layout_constraintBottom_toTopOf="@+id/textoLogin"
+        app:layout_constraintBottom_toTopOf="@+id/txtFaca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoHome"
+        app:layout_constraintTop_toBottomOf="@+id/txtHome"
         app:layout_constraintVertical_bias="0.136"
         app:srcCompat="@drawable/quadrado" />
 
     <ImageView
-        android:id="@+id/imgQuadrado"
+        android:id="@+id/imgQuadradoUSER1"
         android:layout_width="93dp"
         android:layout_height="82dp"
-        app:layout_constraintBottom_toTopOf="@+id/textoLogin"
-        app:layout_constraintEnd_toStartOf="@+id/imgQuadradoII"
+        app:layout_constraintBottom_toTopOf="@+id/txtFaca"
+        app:layout_constraintEnd_toStartOf="@+id/imgQuadradoUSER2"
         app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoHome"
+        app:layout_constraintTop_toBottomOf="@+id/txtHome"
         app:layout_constraintVertical_bias="0.139"
         app:srcCompat="@drawable/quadrado" />
 
     <TextView
-        android:id="@+id/textoHome"
+        android:id="@+id/txtHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="476dp"
@@ -85,11 +85,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoUSER"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textoLogin"
+        android:id="@+id/txtFaca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
@@ -102,7 +102,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textoPossui"
+        android:id="@+id/txtPossui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
@@ -113,19 +113,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtFaca"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/imgbDenun"
+        android:id="@+id/imgbDenuncia"
         android:layout_width="57dp"
         android:layout_height="54dp"
         android:background="@null"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/imgQuadrado"
-        app:layout_constraintEnd_toEndOf="@+id/imgQuadrado"
-        app:layout_constraintStart_toStartOf="@+id/imgQuadrado"
-        app:layout_constraintTop_toTopOf="@+id/imgQuadrado"
+        app:layout_constraintBottom_toBottomOf="@+id/imgQuadradoUSER1"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuadradoUSER1"
+        app:layout_constraintStart_toStartOf="@+id/imgQuadradoUSER1"
+        app:layout_constraintTop_toTopOf="@+id/imgQuadradoUSER1"
         app:srcCompat="@drawable/img" />
 
     <ImageButton
@@ -134,22 +134,22 @@
         android:layout_height="58dp"
         android:background="@null"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/imgQuadradoII"
-        app:layout_constraintEnd_toEndOf="@+id/imgQuadradoII"
+        app:layout_constraintBottom_toBottomOf="@+id/imgQuadradoUSER2"
+        app:layout_constraintEnd_toEndOf="@+id/imgQuadradoUSER2"
         app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="@+id/imgQuadradoII"
-        app:layout_constraintTop_toTopOf="@+id/imgQuadradoII"
+        app:layout_constraintStart_toStartOf="@+id/imgQuadradoUSER2"
+        app:layout_constraintTop_toTopOf="@+id/imgQuadradoUSER2"
         app:layout_constraintVertical_bias="0.458"
         app:srcCompat="@drawable/imgi" />
 
     <ImageView
-        android:id="@+id/imgLogo"
+        android:id="@+id/imgLogoUSER"
         android:layout_width="202dp"
         android:layout_height="133dp"
         android:layout_marginStart="90dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="90dp"
-        app:layout_constraintBottom_toTopOf="@+id/textoLogin"
+        app:layout_constraintBottom_toTopOf="@+id/txtFaca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +164,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="54dp"
         app:layout_constraintEnd_toStartOf="@+id/imgReta2"
-        app:layout_constraintTop_toBottomOf="@+id/imgQuadrado"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuadradoUSER1"
         app:srcCompat="@drawable/retangulolaranja" />
 
     <Button
@@ -175,15 +175,15 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="-5dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/textoPossui"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPossui"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textoPossui"
-        app:layout_constraintTop_toTopOf="@+id/textoLogin"
+        app:layout_constraintStart_toEndOf="@+id/txtPossui"
+        app:layout_constraintTop_toTopOf="@+id/txtFaca"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textoCadastre"
+        android:id="@+id/txtCadastre"
         android:layout_width="117dp"
         android:layout_height="29dp"
         android:fontFamily="@font/poppins_semibold"

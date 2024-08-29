@@ -137,19 +137,19 @@
         android:text="CADASTRO"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgPata"
+        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgRetaL"
         android:layout_width="83dp"
         android:layout_height="4dp"
-        app:layout_constraintStart_toEndOf="@+id/imgPata"
+        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
         app:srcCompat="@drawable/retangulolaranja"
         tools:layout_editor_absoluteY="126dp" />
 
     <ImageView
-        android:id="@+id/imgPata"
+        android:id="@+id/imgIconeLOGIN"
         android:layout_width="74dp"
         android:layout_height="71dp"
         android:layout_marginStart="88dp"

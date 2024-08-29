@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //criando variável dos botões
-        ImageButton imgbDenun = findViewById(R.id.imgbDenun);
+        ImageButton imgbDenun = findViewById(R.id.imgbDenuncia);
         ImageButton imgbAdocao  = findViewById(R.id.imgbAdocao);
         Button bt_cadastro = findViewById(R.id.bt_cadastro);
 
