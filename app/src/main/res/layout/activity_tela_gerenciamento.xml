@@ -110,12 +110,14 @@
 
     <View
         android:id="@+id/viewGERENC"
-        android:layout_width="315dp"
-        android:layout_height="204dp"
+        android:layout_width="320dp"
+        android:layout_height="205dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="48dp"
+        android:layout_marginBottom="82dp"
         android:background="#D9D9D9"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarGERENC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCasoGERENC" />
@@ -139,6 +141,7 @@
         android:id="@+id/btnExcluirGERENC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="35dp"
         android:backgroundTint="#536038"
@@ -146,6 +149,18 @@
         android:text="EXCLUIR"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewGERENC" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutGERENC"
+        android:layout_width="310dp"
+        android:layout_height="195dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGERENC"
+        app:layout_constraintEnd_toEndOf="@+id/viewGERENC"
+        app:layout_constraintStart_toStartOf="@+id/viewGERENC"
+        app:layout_constraintTop_toTopOf="@+id/viewGERENC">
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,11 +63,13 @@
     <View
         android:id="@+id/viewLISTAR"
         android:layout_width="315dp"
-        android:layout_height="267dp"
+        android:layout_height="270dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="54dp"
         android:layout_marginEnd="48dp"
+        android:layout_marginBottom="56dp"
         android:background="#D9D9D9"
+        app:layout_constraintBottom_toTopOf="@+id/btnListar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtListar" />
@@ -86,5 +88,31 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutLISTAR"
+        android:layout_width="305dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLISTAR"
+        app:layout_constraintEnd_toEndOf="@+id/viewLISTAR"
+        app:layout_constraintStart_toStartOf="@+id/viewLISTAR"
+        app:layout_constraintTop_toTopOf="@+id/viewLISTAR">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
