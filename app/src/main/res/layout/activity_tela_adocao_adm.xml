@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EAD3"
+    tools:context=".telaAdocaoADM">
+
+    <ImageView
+        android:id="@+id/imgIconAdocaoADM"
+        android:layout_width="74dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/epet" />
+
+    <TextView
+        android:id="@+id/txtAdocaoADM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ADOÇÕES PET"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgIconAdocaoADM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLinhaAdocaoADM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
+        app:layout_constraintStart_toEndOf="@+id/imgIconAdocaoADM"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retangulolaranja" />
+
+    <TextView
+        android:id="@+id/txtConfiraAdocaoADM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="@font/poppins"
+        android:text="Confira os pedidos de"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAdocoesAdocaoADM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="adoções dos animais:"
+        app:layout_constraintEnd_toEndOf="@+id/txtConfiraAdocaoADM"
+        app:layout_constraintStart_toStartOf="@+id/txtConfiraAdocaoADM"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfiraAdocaoADM" />
+
+    <View
+        android:id="@+id/viewAdocaoADM"
+        android:layout_width="300dp"
+        android:layout_height="405dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        android:background="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdocoesAdocaoADM" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutAdocaoADM"
+        android:layout_width="290dp"
+        android:layout_height="395dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewAdocaoADM"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdocaoADM"
+        app:layout_constraintStart_toStartOf="@+id/viewAdocaoADM"
+        app:layout_constraintTop_toTopOf="@+id/viewAdocaoADM">
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
