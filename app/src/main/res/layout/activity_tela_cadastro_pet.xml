@@ -292,7 +292,7 @@
         android:layout_height="51dp"
         android:layout_marginStart="138dp"
         android:layout_marginEnd="138dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="25dp"
         android:backgroundTint="#536038"
         android:fontFamily="@font/poppins_semibold"
         android:text="CADASTRAR"
