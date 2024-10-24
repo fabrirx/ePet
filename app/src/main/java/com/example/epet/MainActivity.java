@@ -16,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //criando variável dos botões
-        ImageButton imgbDenun = findViewById(R.id.imgbDenuncia);
+        ImageButton imgbAband = findViewById(R.id.imgbAbandono);
+        ImageButton imgbMaus = findViewById(R.id.imgbMausTratos);
         ImageButton imgbAdocao  = findViewById(R.id.imgbAdocao);
+        ImageButton imgbApad = findViewById(R.id.imgbApadrinhar);
         Button bt_cadastro = findViewById(R.id.bt_cadastro);
 
         //evento ao clicar no botão
-        imgbDenun.setOnClickListener(new View.OnClickListener() {
+        imgbAband.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //método para abrir a outra tela
