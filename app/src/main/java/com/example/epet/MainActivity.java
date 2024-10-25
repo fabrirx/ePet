@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //método para abrir a outra tela
-                Intent intent = new Intent(MainActivity.this, telaCadastro.class);
+                Intent intent = new Intent(MainActivity.this, TelaCadastro.class);
                 startActivity(intent);
             }
         });

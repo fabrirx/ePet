@@ -40,7 +40,7 @@
             android:name=".telaDenunciaMausTratos"
             android:exported="false" />
         <activity
-            android:name=".telaCadastro"
+            android:name=".TelaCadastro"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
