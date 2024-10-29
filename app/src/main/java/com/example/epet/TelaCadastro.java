@@ -3,7 +3,6 @@
 package com.example.epet;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,9 +10,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.UrlRewriter;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class TelaCadastro extends AppCompatActivity {
 
@@ -27,51 +33,65 @@ public class TelaCadastro extends AppCompatActivity {
         EditText nome = findViewById(R.id.editTextNome);
         EditText cpf = findViewById(R.id.editTextCpf);
         EditText telefone = findViewById(R.id.editTextFone);
+        EditText cidade = findViewById(R.id.editTextCidade);
         EditText bairro = findViewById(R.id.editTextBairro);
+        EditText rua = findViewById(R.id.editTextRua);
         EditText num = findViewById(R.id.editTextNum);
         EditText cep = findViewById(R.id.editTextCep);
         EditText email = findViewById(R.id.editTextEmail);
         EditText senha = findViewById(R.id.editTextSenha);
-        EditText rua = findViewById(R.id.editTextRua);
+
+
+
+        RequestQueue requisicao = Volley.newRequestQueue(this);
+        String url = "http://localhost:5215/api/ServicesUsuario/Cadastrar";
 
         // Configurar o botão de cadastro
+
         cadastra.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Chamar o método do Retrofit
-                UsuariosService usuariosService = RetrofitClient.getRetrofitInstance().create(UsuariosService.class);
-                Call<String> call = usuariosService.cadastrarUsuario(
-                        nome.getText().toString(),
-                        telefone.getText().toString(),
-                        cep.getText().toString(),
-                        "cidade", // Altere conforme necessário
-                        bairro.getText().toString(),
-                        rua.getText().toString(),
-                        "complemento", // Altere conforme necessário
-                        cpf.getText().toString(),
-                        email.getText().toString(),
-                        "dataNasc", // Altere conforme necessário
-                        senha.getText().toString(),
-                        "nao" //
+            public void onClick(View v) {
+
+                JSONObject jsonBody = new JSONObject();
+
+                try {
+                    jsonBody.put("nome", nome.getText().toString());
+                    jsonBody.put("telefone", telefone.getText().toString());
+                    jsonBody.put("cep", cep.getText().toString());
+                    jsonBody.put("cidade",cidade.getText().toString());
+                    jsonBody.put("bairro", bairro.getText().toString());
+                    jsonBody.put("rua", rua.getText().toString());
+                    jsonBody.put("complemento", rua.getText().toString());
+                    jsonBody.put("cpf", cpf.getText().toString());
+                    jsonBody.put("email", email.getText().toString());
+                    jsonBody.put("dataNasc", num.getText().toString());
+                    jsonBody.put("senha", senha.getText().toString());
+                    jsonBody.put("isAdm", num.getText().toString());
+                }catch (JSONException exc){
+                    exc.printStackTrace();
+                }
+
+
+                JsonObjectRequest enviarPost = new JsonObjectRequest(
+                        Request.Method.POST, url, jsonBody,
+                        new Response.Listener<JSONObject>() {
+                            @Override
+                            public void onResponse(JSONObject response) {
+                                if (response.has("mensagem")) {
+                                    Toast.makeText(TelaCadastro.this, "Cadastro", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        error.printStackTrace();
+                        Toast.makeText(TelaCadastro.this, "Erro ao Enviar", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
                 );
+                requisicao.add(enviarPost);
 
-                call.enqueue(new Callback<String>() {
-                    @Override
-                    public void onResponse(Call<String> call, Response<String> response) {
-                        if (response.isSuccessful()) {
-                            Toast.makeText(TelaCadastro.this, "Cadastro realizado!", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Log.e("Cadastro", "Erro: " + response.code());
-                            Toast.makeText(TelaCadastro.this, "Erro ao cadastrar", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(Call<String> call, Throwable t) {
-                        Log.e("Cadastro", "Falha na chamada: " + t.getMessage());
-                        Toast.makeText(TelaCadastro.this, "Erro ao enviar", Toast.LENGTH_SHORT).show();
-                    }
-                });
             }
         });
     }
