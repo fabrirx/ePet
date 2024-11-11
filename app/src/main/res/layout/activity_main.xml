@@ -12,26 +12,24 @@
         android:layout_width="88dp"
         android:layout_height="26dp"
         android:layout_marginTop="-10dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtAbandono"
-        app:layout_constraintStart_toStartOf="@+id/txtAbandono"
-        app:layout_constraintTop_toBottomOf="@+id/txtAbandono"
+        app:layout_constraintEnd_toEndOf="@+id/txtMausTratos"
+        app:layout_constraintStart_toStartOf="@+id/txtMausTratos"
+        app:layout_constraintTop_toBottomOf="@+id/txtMausTratos"
         app:srcCompat="@drawable/retangulolaranja" />
 
     <TextView
         android:id="@+id/txtHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="490dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins"
         android:text="Como podemos te ajudar hoje?"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogoUSER"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoUSER" />
 
     <TextView
         android:id="@+id/txtFaca"
@@ -66,7 +64,7 @@
         android:layout_width="202dp"
         android:layout_height="133dp"
         android:layout_marginStart="90dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="90dp"
         app:layout_constraintBottom_toTopOf="@+id/txtFaca"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,9 +79,9 @@
         android:layout_width="88dp"
         android:layout_height="26dp"
         android:layout_marginTop="-10dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtMausTratos"
-        app:layout_constraintStart_toStartOf="@+id/txtMausTratos"
-        app:layout_constraintTop_toBottomOf="@+id/txtMausTratos"
+        app:layout_constraintEnd_toEndOf="@+id/txtAbandono"
+        app:layout_constraintStart_toStartOf="@+id/txtAbandono"
+        app:layout_constraintTop_toBottomOf="@+id/txtAbandono"
         app:srcCompat="@drawable/retangulolaranja" />
 
     <Button
@@ -116,40 +114,48 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/imgbMausTratos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        app:srcCompat="@drawable/btnmaus"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="270dp" />
-
-    <ImageButton
         android:id="@+id/imgbAbandono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="75dp"
         android:background="@null"
-        app:srcCompat="@drawable/btnabandono"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="270dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHome"
+        app:srcCompat="@drawable/btnmaus" />
+
+    <ImageButton
+        android:id="@+id/imgbMausTratos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="55dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHome"
+        app:srcCompat="@drawable/btnabandono" />
 
     <ImageButton
         android:id="@+id/imgbAdocao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="60dp"
         android:background="@null"
-        app:srcCompat="@drawable/btnadocao"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReta"
+        app:srcCompat="@drawable/btnadocao" />
 
     <ImageButton
         android:id="@+id/imgbApadrinhar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="75dp"
         android:background="@null"
-        app:srcCompat="@drawable/btnapadrinhar"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReta2"
+        app:srcCompat="@drawable/btnapadrinhar" />
 
     <TextView
         android:id="@+id/txtDenun1"
@@ -157,29 +163,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="DENÚNCIA"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/imgbAbandono"
-        app:layout_constraintStart_toStartOf="@+id/imgbAbandono"
-        app:layout_constraintTop_toBottomOf="@+id/imgbAbandono" />
-
-    <TextView
-        android:id="@+id/txtAbandono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-5dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="ABANDONO"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtDenun1"
-        app:layout_constraintStart_toStartOf="@+id/txtDenun1"
-        app:layout_constraintTop_toBottomOf="@+id/txtDenun1" />
-
-    <TextView
-        android:id="@+id/txtDenun2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="DENÚNCIA"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imgbMausTratos"
         app:layout_constraintStart_toStartOf="@+id/imgbMausTratos"
@@ -192,6 +176,32 @@
         android:layout_marginTop="-5dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="MAUS-TRATOS"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtDenun1"
+        app:layout_constraintStart_toStartOf="@+id/txtDenun1"
+        app:layout_constraintTop_toBottomOf="@+id/txtDenun1" />
+
+    <TextView
+        android:id="@+id/txtDenun2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="DENÚNCIA"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgbAbandono"
+        app:layout_constraintStart_toStartOf="@+id/imgbAbandono"
+        app:layout_constraintTop_toBottomOf="@+id/imgbAbandono" />
+
+    <TextView
+        android:id="@+id/txtAbandono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="ABANDONO"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/txtDenun2"
         app:layout_constraintStart_toStartOf="@+id/txtDenun2"
@@ -203,6 +213,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="ADOÇÃO"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imgbAdocao"
         app:layout_constraintStart_toStartOf="@+id/imgbAdocao"
@@ -214,6 +225,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="APADRINHAR"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imgbApadrinhar"
         app:layout_constraintStart_toStartOf="@+id/imgbApadrinhar"

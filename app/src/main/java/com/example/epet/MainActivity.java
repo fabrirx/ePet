@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt_cadastro = findViewById(R.id.bt_cadastro);
 
         //evento ao clicar no botão
-        imgbAband.setOnClickListener(new View.OnClickListener() {
+        imgbMaus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //método para abrir a outra tela
@@ -31,6 +31,37 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //evento ao clicar no botão
+        imgbAband.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //método para abrir a outra tela
+                Intent intent = new Intent(MainActivity.this, telaDenunciaAbandono.class);
+                startActivity(intent);
+            }
+        });
+
+        //evento ao clicar no botão
+        imgbAdocao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //método para abrir a outra tela
+                Intent intent = new Intent(MainActivity.this, telaAdocao.class);
+                startActivity(intent);
+            }
+        });
+
+        //evento ao clicar no botão
+        //imgbApad.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //método para abrir a outra tela
+                //Intent intent = new Intent(MainActivity.this, );
+                //startActivity(intent);
+            //}
+        //});
+
 
         //evento clicar no botão de cadastro invisivel
         bt_cadastro.setOnClickListener(new View.OnClickListener() {
