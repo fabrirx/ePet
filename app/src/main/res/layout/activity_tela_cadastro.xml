@@ -22,8 +22,45 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="137dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="CADASTRO"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgIconeLOGIN"
+        android:layout_width="74dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/epet" />
+
+    <TextView
+        android:id="@+id/txtRua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="376dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="RUA:"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/editTextConfirmar"
+        android:id="@+id/editTextFone"
         android:layout_width="248dp"
         android:layout_height="24dp"
         android:layout_marginStart="80dp"
@@ -31,46 +68,210 @@
         android:layout_marginEnd="83dp"
         android:background="#ADC17C"
         android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefone" />
+
+    <EditText
+        android:id="@+id/editTextCpf"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/txtCpf"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="216dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="TELEFONE:"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSobrenome"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="83dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSobrenome" />
+
+    <TextView
+        android:id="@+id/txtSobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="SOBRENOME:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="83dp"
+        android:background="#ADC17C"
+        android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtConfirmar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="14dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="240dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btCadastrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/retangulovert" />
+    <EditText
+        android:id="@+id/editTextComplemento"
+        android:layout_width="246dp"
+        android:layout_height="23dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtComplento"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <EditText
+        android:id="@+id/editTextCidade"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtCidade"
+        tools:layout_editor_absoluteX="80dp" />
 
     <TextView
-        android:id="@+id/txtSenha"
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="NOME:"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgRetaL"
+        android:layout_width="83dp"
+        android:layout_height="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
+        app:srcCompat="@drawable/retangulolaranja"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/txtCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="176dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="CPF:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="536dp"
+        android:layout_marginTop="268dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="SENHA:"
+        android:text="CIDADE:"
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/txtComplento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="324dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Complemento:"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRua"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtRua"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <EditText
+        android:id="@+id/editTextCep"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCep" />
+
+    <TextView
         android:id="@+id/txtNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="468dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Nº:"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextConfirmar"
+        android:layout_width="248dp"
+        android:layout_height="24dp"
+        android:background="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmar"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/txtCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="CEP:"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -89,50 +290,23 @@
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <EditText
-        android:id="@+id/editTextSenha"
-        android:layout_width="248dp"
+        android:id="@+id/editTextNum"
+        android:layout_width="50dp"
         android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="83dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
-
-    <EditText
-        android:id="@+id/editTextCep"
-        android:layout_width="115dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="80dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCep" />
-
-    <TextView
-        android:id="@+id/txtCep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="444dp"
-        android:layout_marginEnd="164dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="CEP:"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero" />
 
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginTop="524dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="E-MAIL:"
         android:textColor="#000000"
@@ -144,8 +318,8 @@
         android:id="@+id/txtConfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="584dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="616dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="CONFIRMAR SENHA:"
         android:textColor="#000000"
@@ -153,70 +327,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNum"
-        android:layout_width="50dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumero" />
-
-    <TextView
-        android:id="@+id/txtCadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="137dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="CADASTRO"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/imgIconeLOGIN"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/txtCadastro"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/epet" />
-
-    <ImageView
-        android:id="@+id/imgRetaL"
-        android:layout_width="83dp"
-        android:layout_height="4dp"
-        android:layout_marginTop="-5dp"
-        app:layout_constraintStart_toEndOf="@+id/imgIconeLOGIN"
-        app:layout_constraintTop_toBottomOf="@+id/txtCadastro"
-        app:srcCompat="@drawable/retangulolaranja" />
-
-    <TextView
-        android:id="@+id/txtRua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="320dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="RUA:"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/imageView"
+        android:layout_width="14dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCep"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextNum"
+        app:srcCompat="@drawable/retangulovert"
+        tools:layout_editor_absoluteY="492dp" />
 
     <TextView
         android:id="@+id/txtBairro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="365dp"
+        android:layout_marginTop="424dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="BAIRRO:"
         android:textColor="#000000"
@@ -224,184 +352,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextFone"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTelefone" />
-
-    <EditText
-        android:id="@+id/editTextSobrenome"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSobrenome" />
-
-    <EditText
-        android:id="@+id/editTextNome"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
-
     <TextView
-        android:id="@+id/txtCpf"
+        android:id="@+id/txtSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="182dp"
+        android:layout_marginTop="576dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="CPF:"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtSobrenome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="136dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="SOBRENOME:"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="88dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="NOME:"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextCpf"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
-        android:background="#ADC17C"
-        android:backgroundTint="#ADC17C"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCpf" />
-
-    <TextView
-        android:id="@+id/txtTelefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="228dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="TELEFONE:"
+        android:text="SENHA:"
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextCidade"
+        android:id="@+id/editTextSenha"
         android:layout_width="248dp"
         android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCidade" />
-
-    <TextView
-        android:id="@+id/txtCidade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="275dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="CIDADE:"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextRua"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRua" />
-
-    <EditText
-        android:id="@+id/editTextRua"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="83dp"
-        android:background="#ADC17C"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRua" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSenha"
+        tools:layout_editor_absoluteX="80dp" />
 
     <EditText
         android:id="@+id/editTextBairro"
         android:layout_width="248dp"
         android:layout_height="24dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="-5dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="83dp"
         android:background="#ADC17C"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBairro" />
 
