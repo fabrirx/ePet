@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class telaGerenciamento extends AppCompatActivity {
+public class telaApadrinhar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_gerenciamento);
+        setContentView(R.layout.activity_tela_apadrinhar);
     }
 }

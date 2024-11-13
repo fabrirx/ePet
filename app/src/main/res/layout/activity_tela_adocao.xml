@@ -124,12 +124,12 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="92dp"
+        android:layout_width="100dp"
         android:layout_height="35dp"
         android:layout_marginBottom="5dp"
         android:backgroundTint="#A1B079"
         android:fontFamily="@font/poppins_bold"
-        android:text="ADOTAR"
+        android:text="DETALHES"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
