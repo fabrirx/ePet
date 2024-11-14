@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".telaInformacoes"
+            android:exported="false" />
+        <activity
             android:name=".telaApadrinhar"
             android:exported="false" />
         <activity
