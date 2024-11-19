@@ -25,21 +25,6 @@
             android:name=".telaDenunciaAbandono"
             android:exported="false" />
         <activity
-            android:name=".telaAdocaoADM"
-            android:exported="false" />
-        <activity
-            android:name=".telaListarPet"
-            android:exported="false" />
-        <activity
-            android:name=".telaGerenciamento"
-            android:exported="false" />
-        <activity
-            android:name=".telaInicialADM"
-            android:exported="false" />
-        <activity
-            android:name=".telaCadastroPet"
-            android:exported="false" />
-        <activity
             android:name=".telaAdocao"
             android:exported="false" />
         <activity

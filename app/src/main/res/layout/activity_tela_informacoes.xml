@@ -137,6 +137,39 @@
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="457dp" />
 
+    <TextView
+        android:id="@+id/txtRuaII"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Rua"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/txtBairro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Bairro"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <TextView
+        android:id="@+id/txtCidade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Cidade"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="649dp" />
+
     <EditText
         android:id="@+id/editTxtCep"
         android:layout_width="282dp"
@@ -148,4 +181,41 @@
         android:inputType="text"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="64dp" />
+
+    <EditText
+        android:id="@+id/editTxtRua"
+        android:layout_width="282dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="544dp"
+        android:background="#ADC17C"
+        android:backgroundTint="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <EditText
+        android:id="@+id/editTxtBairro"
+        android:layout_width="282dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="612dp"
+        android:background="#ADC17C"
+        android:backgroundTint="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <EditText
+        android:id="@+id/editTxtCidade2"
+        android:layout_width="282dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="676dp"
+        android:background="#ADC17C"
+        android:backgroundTint="#ADC17C"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="64dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
