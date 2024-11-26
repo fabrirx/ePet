@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText15"
+        android:id="@+id/editComplemento"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
@@ -40,14 +40,14 @@
         android:layout_marginStart="222dp"
         android:layout_marginTop="515dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="CIDADE:"
+        android:text="NUMERO:"
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText14"
+        android:id="@+id/editNumero"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="222dp"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText13"
+        android:id="@+id/editCidade"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
@@ -99,7 +99,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText12"
+        android:id="@+id/editBairro"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
@@ -181,7 +181,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/editRelatar"
         android:layout_width="260dp"
         android:layout_height="130dp"
         android:layout_marginStart="65dp"
@@ -204,7 +204,7 @@
         android:textColor="#000000"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/textView21"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/editRelatar" />
 
     <TextView
         android:id="@+id/textView23"
@@ -239,7 +239,7 @@
         app:shapeAppearance="@style/CardView" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editRua"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"

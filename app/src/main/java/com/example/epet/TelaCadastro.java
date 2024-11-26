@@ -79,7 +79,7 @@ public class TelaCadastro extends AppCompatActivity {
                             @Override
                             public void onResponse(JSONObject response) {
                                 if (response.has("mensagem")) {
-                                    Toast.makeText(TelaCadastro.this, "Cadastro", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(TelaCadastro.this, "Cadastrado", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }, new Response.ErrorListener() {
